@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>account-Keshav</title>
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+  <div class="header" style="    background: #fff;position: fixed;width: 100%;top: 0;z-index: 2000;">
+    <div class="container">
+      <div class="navbar">
+        <div class="log">
+          <img src="images/logo.png" width="180px">
+        </div>
+        <nav>
+          <ul id="appItems"></ul>
+          <ul class="list">
+            <li><a href="index.html" class="navbar-link">Home</a></li>
+            <li><a href="products.html" class="navbar-link">Products</a></li>
+            <li><a href="about.html" class="navbar-link">About</a></li>
+            <li><a href="#contact" class="navbar-link">Contact</a></li>
+            <li><a href="account.html" class="navbar-link">Account</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html"><img src="images/cart.png" width="40px" height="40px"></a>
+        <img src="images/app.png" class="app-icon" width="40px" height="40px" onclick="apptoggle()">
+      </div>
+
+    </div>
+  </div>
+<!---------- account-page------------>
+
+
+
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src ="images/hero-banner.png" width="570" height="690" >
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                   <div class="form-btn">
+                    <span onclick="login()"> Login</span>
+                    <span onclick="register()">Register</span>
+                    <hr id="Indicator">
+                   </div>
+                    <form id ="LoginForm">
+                    <input type="text" placeholder="Username">
+                    <input type="password" placeholder="password">
+                    <button type=" submit" class="btn-auth">Login</button>
+                    <p onclick="forget()">Forgot password</p>
+                   </form>
+
+                   <form id="RegForm">
+                    <input type="text" placeholder="Username">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="password">
+                    <button type=" submit" class="btn-auth">Register</button>
+                     </form>
+
+                     <!-- <form id="ForgetForm">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="password">
+                        <button type=" submit" class="btn-auth">Register Password</button>
+                     </form> -->
+
+                    </div>
+            </div>
+            
+    </div>
+</div>
+  <!-- 
+   - #FOOTER
+ -->
+
+
+
+
+  <a href="#top" class="back-to-top" aria-label="Back to Top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+  </div>
+  </div>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer id="contact" class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="./index.html" class="logo"><img src="images/logo.png" width="180"></a>
+
+          <p class="footer-text">
+            It was popularised in the 1960s with the release of Letraset sheets containing Lorem passages and more
+            recently with
+            desktop publishing software like including.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-skype"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Company</p>
+          </li>
+
+          <li>
+            <a href="./about.html" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="./products.html" class="footer-link">Products</a>
+          </li>
+
+          <li>
+            <a href="./index.html" class="footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="./account.html" class="footer-link">Account</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="footer-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact</p>
+          </li>
+
+          <li class="footer-item">
+            <div class="contact-icon">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="contact-link">
+              1/758, Ashok nagar,<br> Vennampatti, Dharmapuri-636705<br>Tamilnadu, India
+            </address>
+          </li>
+
+          <li class="footer-item">
+
+            <div class="contact-icon">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+1800123456789" class="contact-link">+91 97886 38179</a>
+          </li>
+
+          <li class="footer-item">
+            <div class="contact-icon">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:organica@help.com" class="contact-link">keshav-organic@gmail.com</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title">Download Our App</p>
+          <div class="footer-col-1">
+            <p> Download App For Android and ios mobile phone. </p>
+            <div class="app-logo">
+              <img src="./images/appstore1.webp" height="50">
+              <img src="./images/appstore2.webp" height="50">
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 <a href="#" class="copyright-link">codewithkeshav</a>. All Rights Reserved.
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link">Term and Service</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Privacy Policy</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!-------js for toggle app----->
+  <!-- <script>
+ var appItems = document.getElementById("appItems");
+
+ appItems.style.maxHeight = "0px";
+
+ function apptoggle(){
+   if (appItems.style.maxHeight == "0px")
+ {
+   appItems.style.maxHeight ="200px";
+ }
+ else
+ {
+   appItems.style.maxHeight ="0px";
+ }
+ }
+</script> -->
+
+ <!----js for toggle Form------>
+
+ <script>
+     var Login =document. getElementById("LoginForm");
+     var RegFrom =document. getElementById("RegForm");
+     var ForgetForm = document.getElementById("ForgetForm");
+     var Indicator =document. getElementById("Indicator");
+
+     function register(){
+
+         RegForm.style.transform ="translateX(0px)";
+         LoginForm.style.transform ="translateX(0px)";
+         Indicator.style.transform = "translateX(100px)";
+     }
+
+     function login(){
+
+        RegForm.style.transform ="translateX(300px)";
+        LoginForm.style.transform ="translateX(300px)";
+        Indicator.style.transform = "translateX(0px)" ;                                                                                                                               
+     }
+     function forget(){
+
+     }
+ </script>
+</body>
+
+</html>
